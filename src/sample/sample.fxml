@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1420.0" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <MediaView fx:id="mediaVideo" fitHeight="800.0" fitWidth="1420.0" preserveRatio="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <viewport>
+            <Rectangle2D />
+         </viewport>
+      </MediaView>
+      <Pane layoutX="566.0" layoutY="230.0" prefHeight="473.0" prefWidth="368.0" style="-fx-background-color: #ffffff67; -fx-background-radius: 40px; -fx-border-color: #004d39; -fx-border-radius: 40px; -fx-border-width: 2.5px;" AnchorPane.bottomAnchor="163.0" AnchorPane.leftAnchor="526.0" AnchorPane.rightAnchor="526.0" AnchorPane.topAnchor="164.0">
+         <effect>
+            <DropShadow color="#838383" />
+         </effect>
+         <children>
+            <Label layoutX="76.0" layoutY="35.0" prefHeight="80.0" prefWidth="210.0" text="Weather" textFill="#004d39">
+               <font>
+                  <Font name="Bell MT Bold" size="54.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="username" focusColor="#3a58b200" layoutX="56.0" layoutY="150.0" prefHeight="44.0" prefWidth="257.0" promptText="Username" style="-fx-border-color: #004d39; -fx-border-radius: 50px;" unFocusColor="#4d4d4d00">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="password" focusColor="#405aa800" layoutX="56.0" layoutY="237.0" prefHeight="44.0" prefWidth="257.0" promptText="Password" style="-fx-border-color: #004d39; -fx-border-radius: 50px;" unFocusColor="#4d4d4d00">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXButton fx:id="signin" layoutX="56.0" layoutY="321.0" onAction="#login" prefHeight="44.0" prefWidth="257.0" style="-fx-border-radius: 50px; -fx-border-color: #004d39; -fx-background-color: #009970; -fx-background-radius: 50px;" text="SIGN IN" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="56.0" layoutY="374.0" onAction="#resetPassword" prefHeight="44.0" prefWidth="257.0" text="FORGOT YOUR PASSWORD?" textFill="#004d39" underline="true">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="65.0" fitWidth="76.0" layoutX="148.0" layoutY="-32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@media/user.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

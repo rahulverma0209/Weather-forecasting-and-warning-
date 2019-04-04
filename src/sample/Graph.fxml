@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #e3e8ef;" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Graph">
+   <children>
+      <LineChart fx:id="lc1" layoutX="37.0" layoutY="24.0" legendVisible="false" prefHeight="533.0" prefWidth="883.0" title="Weather Report">
+        <xAxis>
+          <CategoryAxis label="UpComing Day (in numbers)" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis label="Temperature" side="LEFT" />
+        </yAxis>
+      </LineChart>
+   </children>
+</AnchorPane>

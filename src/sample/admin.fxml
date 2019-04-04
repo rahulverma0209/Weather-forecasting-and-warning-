@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1420.0" style="-fx-background-color: #e3e8ef;" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Admin">
+   <children>
+      <ImageView fitHeight="664.0" fitWidth="1437.0" layoutY="138.0" pickOnBounds="true">
+         <image>
+            <Image url="@media/AdminBackgroung1.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" prefHeight="144.0" prefWidth="1437.0" style="-fx-background-color: #303133;" text="Weather Admin" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="62.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="signin" buttonType="RAISED" layoutX="282.0" layoutY="194.0" onAction="#ViewWeather" opacity="0.8" prefHeight="244.0" prefWidth="395.0" style="-fx-border-radius: 40px; -fx-border-color: #083389; -fx-border-width: 2.5; -fx-background-color: #1a75ff; -fx-background-radius: 40px;" text="View Weather" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="44.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="727.0" layoutY="194.0" onAction="#loadUser" opacity="0.8" prefHeight="244.0" prefWidth="395.0" style="-fx-border-radius: 40px; -fx-border-color: #083389; -fx-border-width: 2.5; -fx-background-color: #1a75ff; -fx-background-radius: 40px;" text="User Records" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="44.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="282.0" layoutY="485.0" onAction="#sendMail" opacity="0.8" prefHeight="244.0" prefWidth="395.0" style="-fx-border-radius: 40px; -fx-border-color: #083389; -fx-border-width: 2.5; -fx-background-color: #1a75ff; -fx-background-radius: 40px;" text="Send Warning" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="44.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="727.0" layoutY="485.0" onAction="#loadSystem" opacity="0.8" prefHeight="244.0" prefWidth="395.0" style="-fx-border-radius: 40px; -fx-border-color: #083389; -fx-border-width: 2.5; -fx-background-color: #1a75ff; -fx-background-radius: 40px;" text="System Info" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="44.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXButton>
+   </children>
+</AnchorPane>
